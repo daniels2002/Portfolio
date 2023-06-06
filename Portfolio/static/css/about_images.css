@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lobster&display=swap');
+    
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lobster&family=Neucha&display=swap');
+
+.container-fluid {
+  min-height: 50px;
+  background-color: rgb(229, 220, 220);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  background-color: rgb(228, 221, 216);
+  line-height: 80px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: darkgray;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+b {
+  font-size: 70px;
+  color: coral;
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.navItems li a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navItems li a:hover {
+  color: coral;
+  font-weight: 900;
+}
+
+.links a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  color: coral;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Navigation bar */
+  
+
+  .logo {
+    display: none;
+  }
+
+  .navItems,
+  .links {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navItems li a,
+  .links a {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Main content */
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* About section */
+  .six {
+    flex-direction: column;
+  }
+
+  .four {
+    margin-bottom: 0;
+  }
+
+  
+}
+
+@media (min-width: 620px) {
+  .p1 {
+    font-size: 28px;
+    margin-left: 50px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 400;
+  }
+}
+
+
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.cap2:hover {
+  color: blue;
+}
+
+.one {
+  width: 100%;
+  background: -webkit-linear-gradient(
+    rgb(152, 152, 177),
+    gold,
+    orange,
+    green
+  );
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    rgb(217, 217, 218),
+    gold,
+    orange,
+    green
+  );
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(blue, gold, orange, green);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    rgb(150, 150, 196),
+    rgb(217, 172, 74),
+    rgb(148, 27, 142),
+    rgb(8, 117, 8),
+    rgb(245, 238, 238)
+  );
+  /* Standard syntax (must be last) */
+}
+
+@media (min-width: 986px) {
+  .three {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 190%;
+    width: 500px;
+  }
+  to {
+    margin-left: 0%;
+    width: 500px;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    opacity: 0;
+    margin-top: -100px;
+    width: 500px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10px;
+    width: 500px;
+  }
+}
+
+p {
+  animation-name: slidein2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.heading_1:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.four {
+  margin-top: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media (max-width: 260px) {
+  .four {
+    background: linear-gradient(
+      rgb(150, 150, 196),
+      rgb(217, 172, 74),
+      rgb(148, 27, 142),
+      rgb(8, 117, 8)
+    );
+  }
+  .two {
+    margin-left: 0px;
+  }
+}
+
+.five {
+  height: 8vh;
+  background: linear-gradient(white, white, rgb(225, 14, 14));
+  padding-left: 45rem;
+}
+
+.icon1 {
+  transform: rotate(0deg);
+  transition: 0s ease-out;
+  transition: 0s ease-in;
+  transform: skew(0deg, 0deg);
+}
+
+.icon1:hover {
+  transition: 1s ease-in;
+  transform: skew(8deg, 8deg);
+}
+
+.icon2 {
+  color: rgb(110, 57, 209);
+  opacity: 1;
+  transform: translate(0px);
+  transition: 0s ease-out;
+}
+
+.icon2:hover {
+  transform: translate(95px);
+  opacity: 0;
+  transition: 2s ease-out;
+}
+
+.icon3 {
+  color: red;
+  transform: rotate(0deg);
+  transition: 0s ease-out;
+}
+
+.icon3:hover {
+  transform: rotate(10deg);
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+}
+
+.two {
+  display: flex;
+  flex-direction: row;
+}
+
+.rotate_right {
+  transform: rotate(4deg);
+}
+
+.rotate_left {
+  transform: rotate(-2deg);
+}
+
+.cap2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.gridpictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(176, 61, 211);
+  opacity: 80;
+  color: white;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1000ms linear;
+  width: 100%;
+  margin-top: 5px;
+  height: 25px;
+}
+
+footer:hover {
+  color: blueviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: background-color 1000ms linear;
+  background-color: #efefef;
+}
+
+/* Image overlay hover css */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.5s;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-container:hover img {
+  transform: scale(1.6);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+  /* Navigation bar */
+  
+
+  /* Main content */
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* About section */
+  .six {
+    flex-direction: column;
+  }
+
+  .four {
+    margin-bottom: 0;
+  }
+
+  .p1 {
+    font-size: 14px;
+  }
+  nav{
+    display: flex;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 620px) {
+  .six {
+    display: flex;
+    background: linear-gradient(
+        rgb(237, 232, 232),
+        rgb(55, 55, 149),
+        rgb(150, 150, 196),
+        white,
+        white
+      );
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .six {
+    display: flex;
+    background: linear-gradient(
+        rgb(237, 232, 232),
+        rgb(55, 55, 149),
+        rgb(150, 150, 196),
+        white,
+        white
+      );
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p1 {
+    font-size: 28px;
+    margin-left: 50px;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 986px) {
+  .three {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+  }
+}
+@media (max-width: 260px) {
+  .four {
+    background: linear-gradient(
+        rgb(150, 150, 196),
+        rgb(217, 172, 74),
+        rgb(148, 27, 142),
+        rgb(8, 117, 8)
+      );
+  }
+  .two {
+    margin-left: 0px;
+  }
+}
+
+/* CSS for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black with transparency */
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* CSS for the close button */
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.textsize{
+    size: 120px;
+}

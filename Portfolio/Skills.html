@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5add7ef96b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: rgb(229, 220, 220);
+        }
+        .container-fluid{
+            width:100%;
+            background-color: rgb(229, 220, 220);
+            }
+            nav{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                height: fit-content;
+                z-index: 110;
+                background-color: rgb(228, 221, 216);
+                line-height: 80px;
+            }
+            .logo{
+                display: flex;
+                font-size: 40px;
+                font-weight: 800;
+                color:darkgray;
+                letter-spacing: 3px;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+            b{
+                font-size: 70px;
+                color: coral;
+            }
+            .navItems{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                width: 50%;
+            }
+            .navItems li a{
+                text-decoration: none;
+                color: darkgray;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 3px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .navItems li a:hover{
+                color: coral;
+                font-weight: 900;
+            }
+            .links a :hover{
+                text-decoration: none;
+                color: darkgray;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            } 
+            .links a :hover{
+                color: coral;
+                font-weight: 900;
+            }
+
+            .box1{
+                background-repeat: no-repeat;
+                height: 100vh;
+                background-size: contain;
+                width: 100%;
+                background-attachment: fixed;
+                background-image: url(atteli/skill1.jpeg);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;           
+             }
+            .box2{
+                background-position: 685px 0px;
+                background-repeat: no-repeat;
+                height: 100vh;
+                background-size: contain;
+                width: 100%;
+                background-attachment: fixed;
+                background-image: url(atteli/skill2.jpeg);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
+            .box3{
+                background-position: 1575px 0px;
+                background-repeat: no-repeat;
+                height: 100vh;
+                background-size: contain;
+                width: 100%;
+                background-attachment: fixed;
+                background-image: url(atteli/skill3.jpeg);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+              
+            }
+            .box4{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+                background-size: contain;
+                width: 80%;
+                background-attachment: fixed;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            } 
+            .first{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                text-align: center;
+                color: rgb(178, 104, 6);
+                font-family:monospace ;
+                font-size: 50px;
+            }
+            .first h1{
+                font-size: 50px;
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .second{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
+            .second h1{
+                font-size: 50px;
+                color: white;
+                font-weight: 900;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+            }
+            
+            .first h1{
+                animation-name: flow;
+                animation-duration: 6s;
+            }
+            .second h1{
+                animation-name: flow;
+                animation-duration: 6s;
+            }
+            @keyframes flow{
+                0%{
+                    transform: translateY(-100px);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+           footer{
+            text-align: center;
+            background-color: rgb(141, 115, 12);
+            opacity: 80;
+            height: 5vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease;
+            padding: 5px;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+           }
+            footer:hover{
+                background-color: darkslateblue;
+                padding: 25px;
+                transition: all 2s ease;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .second h3{
+                font-size: 60px;
+                color: rgb(0, 0, 0);
+                text-shadow:6px 6px rgb(198, 117, 12) ;
+            }
+            .list li{
+                list-style: bullet;
+                font-size: 50px;
+                margin: 0 20px;
+                transition: all 0.3s ease;
+            }
+            .list li:hover{
+                color: rgb(198, 117, 12);
+                transform: scale(1.2);
+                transition: all 0.3s ease;
+            }
+            .list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+             .small-screen{
+                display: none;
+             }
+            @media  (max-width: 768px){
+                .small-screen{
+                    display: block;
+                }
+                #name1{   
+                    font-size: 12px;
+                }
+                i {
+                    font-size: 5px;
+                }
+                #maintext{
+                    font-size: 10px;
+                }
+                .box1, .box2,.box3 {
+                   display: none;
+                    box-shadow: none;
+                   
+                }
+                .second{
+                    height: 130vh;
+                }
+               
+                .navItems {
+                    width: 100%;
+                }
+                .navItems li a{
+                    font-size: 15px;
+                }
+                .links{
+                    width: 30%;
+                }
+                .wrapper{
+                    height: 1000px;
+                }
+                .cols{
+                    width: 100%;
+                }
+                .btns{
+                    width: 100%;
+                    justify-content: center;
+                }
+                .btns button{
+                    margin-right: 0px;
+                }
+                .imgbox{
+                    width: 100%;
+                    height: 100%;
+                }
+                .imgbox img{
+                    width: 100%;
+                    height: 100%;
+                }
+                nav {
+                    display: flex;
+                    height:fit-content;
+                }           
+            }
+             
+            
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <div class="container-fluid">
+    <nav>
+        <div class="logo">Danie's Folio <b>.</b></div>
+            
+            <ul class="navItems">
+                <li><a id="name1" href="Home.html">Home</a></li>
+                <li><a id="name1" href="about.html">About</a></li>
+                <li><a id="name1" href="Skills.html">Skills</a></li>
+                <li><a id="name1" href="Contacts.html">Contacts</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.facebook.com/jauniesivar/"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/danielsrafaels/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://lv.linkedin.com/in/daniels-rafaels-422618221?trk=people-guest_people_search-card"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+    </nav>
+</div>
+    <!--Main section -->
+      <div class="container-fluid">
+            <div class="row">
+                <div class="col box1"></div>
+                <div class="col first ">
+                       <h1 id="maintext"> With <b style="font-style: italic;"> 3D printing</b>
+                        the sky's the limit,
+                        A skill that makes objects in a minute,
+                        From simple trinkets to complex designs,
+                        The possibilities are truly divine.</h1>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col  second">
+                    <h3>My first 3d prints</h3>
+                    <ol class="list">
+                        <li>Cat</li>
+                        <li>#Benchi</li>
+                        <li>Holding bracket</li>
+                    </ol>
+                </div>
+                <div class="col box2 "></div>
+                <div class="col box3"></div>
+                <div class="small-screen">
+                    <img src="atteli/skill1.jpeg" alt="">
+                    <img src="atteli/skill2.jpeg" alt="">
+                    <img src="atteli/skill3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+        <div class="box4">
+            <div class="first">
+                <h1> To purchase <bdo style="color: blue;">Ender 3 Pro</bdo></h1>
+            </div>
+           <a style="text-decoration: none;font-size: 50px;color: black;" href="https://www.creality.com/products/ender-3-pro-3d-printer">Click here! </a>
+        </div>
+      <div id="box8">
+            <footer>Darba ators:Daniels Rafaels@2023.gads</footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+.one{
+    height: 1000px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgb(152, 152, 177), gold,orange,green); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(217, 217, 218), gold,orange,green); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(blue, gold,orange,green); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(150, 150, 196), rgb(217, 172, 74),rgb(148, 27, 142),rgb(8, 117, 8),white); /* Standard syntax (must be last) */
+}
+
+#me{
+    width: 500px;
+    margin: 0%;
+    padding-top: 15px;
+    margin-left: 500px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+@media  (min-width : 986px){
+    .three{
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-left: 250px;
+        
+
+    }
+}
+@keyframes slidein{
+    from{
+        margin-left: 190%;
+        width: 500px;
+    }
+    to{
+        margin-left: 0%;
+        width: 500px;
+    }
+}
+#me {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+}
+@keyframes slidein2{
+    from{
+        opacity: 0;
+        margin-top: -100px;
+        width: 500px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 10px;
+        width: 500px;
+    }
+}
+h1,p{
+    animation-name: slidein2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+}
+    
+.heading_1 :hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.four{
+    margin-top: 40px;
+   
+}
+@media  (max-width: 260px){
+  .four{
+    background: linear-gradient(rgb(150, 150, 196), rgb(217, 172, 74),rgb(148, 27, 142),rgb(8, 117, 8)); 
+  }
+  .two{
+    margin-left: 0px;
+    }
+}
+.five{
+    height: 8vh;
+    background: linear-gradient(white, white); 
+    padding-left: 45rem;
+}
+
+.icon1{
+    transform: rotate(0deg);
+    transition: 0s ease-out;
+    
+    transition: 0s ease-in;
+    transform: skew(0deg,0deg);
+   
+
+}
+.icon1:hover{
+    transition: 1s ease-in;
+    transform: skew(8deg,8deg);
+}
+.icon2{
+color: rgb(110, 57, 209);
+opacity: 1;
+transform: translate(0px);
+transition: 0s ease-out;
+}
+.icon2:hover{
+    transform: translate(95px);
+    opacity: 0;
+    transition: 2s ease-out;
+}
+.icon3{
+    color: red;
+    transform: rotate(0deg);
+    transition: 0s ease-out;
+
+
+}
+.icon3:hover{
+    
+    transform: rotate(10deg);
+    transform: scale(1.5);
+    transition: 1s ease-in-out;
+
+}
+.two{
+    display: flex;
+    flex-direction: row;
+}
+
+.rotate_right{
+transform: rotate(4deg);
+
+
+}
+.rotate_left{
+transform: rotate(-2deg);
+}
+
+.cap2{
+    font-size: large;
+    font-weight: bold;
+}
+
+.gridpictures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer{
+    text-align: center;
+    background-color: rgb(176, 61, 211);
+    opacity:80;
+    color: white;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1000ms linear;
+    width: 100%; 
+    margin-top: 5px;
+    height: 25px;
+}
+footer:hover{
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 1000ms linear;
+    background-color: #efefef;
+   }
+    .gridpictures img:hover{
+     transform: scale(1.1);
+     filter: blur(-5px);
+     transition: 0.5s;
+    }
+
